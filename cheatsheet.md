@@ -1,0 +1,11 @@
+## Cheat Sheet
+- **Connecting via SSH to devices**:
+    - By default, both username and password are UBNT, after adoption both get changed.
+    - You can find the updated username and password by searching for “Device Authentication” in the network-application settings.
+- **Reset devices**
+    - physically, by pressing the reset button with a pin until the light changes on the device.
+    - remotely, log in via SSH and issue this command `syswrapper.sh restore-default & set-default &` slightly different than the official guides, but solves a bug as explained [here](https://community.ui.com/questions/Unable-to-SSH-to-AP-after-factory-reset-via-SSH/0832a6d0-c927-4800-af8e-d0469fade20b).
+- **Set inform host** (useful for network-application running in docker):
+    - in network-application: go in settings and search for the `Inform Host` option, there select override and set the address to that of the host.
+    - in devices, using SSH: issue this command `set-inform http://HOST-ADDRESS:8080/inform`
+    - in devices, using GUI: some devices, like the USG gateway, offer this setting via the GUI.
