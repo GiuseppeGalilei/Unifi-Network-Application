@@ -1,6 +1,6 @@
 # Ubiquiti Tips and Tricks
 
-Collection of scripts and notes about Ubiquiti gear.
+Collection of scripts and notes about Ubiquiti gear, from an amateur networking geek.
 
 Includes:
 
