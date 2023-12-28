@@ -8,7 +8,7 @@ Includes:
 - Docker compose for deploying Unifi Network Application through CasaOS, along with instructions
 - Cheat Sheet and notes about random Ubiquiti stuff
 
-For deploying Unifi Network Application on a **generic system**, I suggest to follow instructions for DietPi systems and just change the volume bindings to the appropriate ones on your system.
+For deploying Unifi Network Application on a **generic system**, I suggest to follow instructions for DietPi systems and just change the volume bindings and resource allocation to the appropriate ones for your system.
 
 ### For CasaOS users, help needed:
 
