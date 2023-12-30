@@ -4,8 +4,8 @@ Collection of scripts and notes about Ubiquiti gear, from an amateur networking 
 
 Includes:
 
-- 🐳 Docker compose for deploying Unifi Network Application on DietPi systems, along with instructions
-- 🐳 Docker compose for deploying Unifi Network Application through CasaOS, along with instructions
+- 🐳 Docker compose for deploying Unifi Network Application (including mongodb) on DietPi systems, along with instructions
+- 🐳 Docker compose for deploying Unifi Network Application (including mongodb) through CasaOS, along with instructions
 - 📔 Cheat Sheet and notes about random Ubiquiti stuff
 
 Feel free to raise issues and share your insights.
