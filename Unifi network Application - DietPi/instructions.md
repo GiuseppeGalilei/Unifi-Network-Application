@@ -34,8 +34,11 @@ Often, it is also needed to SSH into the devices you want to adopt and manually 
 
 ### Troubleshoot
 
-The `init-mongo.js` file is used **only on the very first** container startup. \
-If you forgot to correctly place the file before the first startup, I suggest you to start from scratch (delete both `unifi-db` and `unifi-network-application` containers and the content of `unifi-db` and `unifi-network-application` folders).
+- The `init-mongo.js` file is used **only on the very first** container startup. \
+  If you forgot to correctly place the file before the first startup, I suggest you to start from scratch (delete both `unifi-db` and `unifi-network-application` containers and the content of `unifi-db` and `unifi-network-application` folders).
+- The proposed memory limits are set very low to allow running on devices with as low as 1GB of RAM.
+  Sometimes such limits are just too low, if your network-application slows down or lags too much for our liking, try tweaking them or just remove the limit entirely if your hardware is capable.
+  (non memory limited deployments have been reported to use up to 1.2GB of RAM)
 
 ### Choices
 
