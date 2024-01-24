@@ -71,7 +71,7 @@ services:
       - target: 6789 #optional
         published: "6789"
         protocol: tcp
-      - target: 5514
+      - target: 5514 #optional
         published: "5514"
         protocol: udp
     restart: unless-stopped
