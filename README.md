@@ -15,5 +15,6 @@ You can also join a more "relaxed" discussion on [Reddit](https://www.reddit.com
 Sometimes the unifi-network-application will start before the db is ready, this stops the starting process.
 To solve this, just restart the network application container.
 
-### For CasaOS users, help needed:
-I created a [Pull Request](https://github.com/IceWhaleTech/CasaOS-AppStore/pull/374) to add this implementation of Unifi Network Application to the official AppStore. If you can, consider testing it and sharing your experience there.
+### For CasaOS users:
+The [Pull Request](https://github.com/IceWhaleTech/CasaOS-AppStore/pull/374) I created got merged!!
+Now you can easily deploy the Unifi Network Application from the official CasaOS AppStore.🤩
