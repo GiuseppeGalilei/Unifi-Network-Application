@@ -1,4 +1,4 @@
-# Unifi Network Application for DietPi
+# Unifi Network Application - Generic (old compose version)
 
 ### Preliminary info
 
