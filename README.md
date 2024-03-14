@@ -1,12 +1,10 @@
-# Ubiquiti Tips and Tricks
+# Unifi Network Application
 
-Collection of scripts and notes about Ubiquiti gear, from an amateur networking geek.
-
-Includes:
+You can find:
 - 🐳 Docker compose for deploying Unifi Network Application (including mongodb) on a **Generic System**, along with instructions
 - 🐳 Docker compose for deploying Unifi Network Application (including mongodb) on **DietPi** systems, along with instructions
 - 🐳 Docker compose for deploying Unifi Network Application (including mongodb) through **CasaOS**, along with instructions
-- 📔 **Cheat Sheet** and notes about random Ubiquiti stuff
+- 📔 **Cheat Sheet** about random Ubiquiti stuff
 
 Feel free to raise issues and share your insights.
 You can also join a more "relaxed" discussion on [Reddit](https://www.reddit.com/r/Ubiquiti/comments/18stenb/unifi_network_application_easy_docker_deployment/).
@@ -17,4 +15,4 @@ To solve this, just restart the network application container.
 
 ### For CasaOS users:
 The [Pull Request](https://github.com/IceWhaleTech/CasaOS-AppStore/pull/374) I created got merged!!
-Now you can easily deploy the Unifi Network Application from the official CasaOS AppStore.🤩
+Now you can easily deploy the Unifi Network Application from the official **CasaOS AppStore**.🤩
