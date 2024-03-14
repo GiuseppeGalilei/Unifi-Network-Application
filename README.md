@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-€%203-blue?logo=buy-me-a-coffee&style=for-the-badge" alt="Buy me a coffee" style="display: inline-block" />
 </a>
 
-## The easy way, OneLiner install!
+## The easy way, OneLiner install! (BETA, feedback is appreciated)
 ```bash
 
 wget -O install.sh https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Network-Application/main/OneLiner/install.sh && chmod +x install.sh && ./install.sh
