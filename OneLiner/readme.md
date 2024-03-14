@@ -1,5 +1,5 @@
 ## This script guides you through the process of deploying Unifi Network Application, on Docker.
-To use it, just copy and past the folllowing command in your terminal
+To use it, just copy and paste the following command in your terminal
 ```bash
 
 wget -O install.sh https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Network-Application/main/OneLiner/install.sh && chmod +x install.sh && ./install.sh
@@ -18,4 +18,4 @@ To make the script work in almost all scenarios, conservative default choices we
 - no memory limits
 In the future I'll update the script to allow for more customisability, feel free to share ideas!
 
-### For an explanation about how the script works and what it does, go through the install.sh file, I tried to put all the relevant information in the comments.
+### For an explanation about how the script works go through the install.sh file, I tried to put all the relevant information in the comments.
