@@ -20,7 +20,7 @@ else
 fi
 
 #check for dependencies being installed
-dependencies=("docker" "docker-compose")
+dependencies=("docker")
 for dependency in "${dependencies[@]}"; do
     if ! command -v "$dependency" &> /dev/null; then
         echo "Error: $dependency is not installed."
@@ -82,7 +82,7 @@ for container_name in "${container_names[@]}"; do
     fi
 done
 
-docker-compose up -d
+docker compose up -d
 
 for container_name in "${container_names[@]}"; do
     while ! docker inspect -f '{{.State.Running}}' "$container_name" &>/dev/null; do
