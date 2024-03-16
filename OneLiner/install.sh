@@ -1,3 +1,4 @@
+#!/bin/bash
 clear
 echo -e "\e[0m\c"
 
@@ -11,7 +12,7 @@ This will deploy both the Unifi Network Application and MongoDB container, along
 If you previously deployed containers unifi-db and unifi-network-application, they will be reinstalled.
 '
 read -p "Press enter to continue: " user_input
-if [ "$user_input" == "" ]; then
+if [ "$user_input" = "" ]; then
     echo "Enter pressed. Let's GO!"
     echo ""
 else
@@ -19,7 +20,6 @@ else
     exit 1
 fi
 
-#check for dependencies being installed
 dependencies=("docker")
 for dependency in "${dependencies[@]}"; do
     if ! command -v "$dependency" &> /dev/null; then
@@ -27,6 +27,11 @@ for dependency in "${dependencies[@]}"; do
         exit 1
     fi
 done
+
+if ! docker info > /dev/null 2>&1; then
+  echo "This script uses docker, and it isn't running - please start docker and try again!"
+  exit 1
+fi
 
 #ask for installation directory, default to home
 read -p "Enter an absolute path to place the installation directory (or press Enter for the home folder): " user_input
@@ -84,6 +89,14 @@ done
 
 docker compose up -d
 
+# Check the exit code of the previous command
+if [ $? -ne 0 ]; then
+    echo "Error: "docker compose up" failed"
+    exit 1
+fi
+
+echo "docker compose up completed successfully"
+
 for container_name in "${container_names[@]}"; do
     while ! docker inspect -f '{{.State.Running}}' "$container_name" &>/dev/null; do
         echo "Waiting for containers to start..."
@@ -99,6 +112,8 @@ rm -rf "$tmp_dir"
 echo '
 Done!
 The dashboard will be available soon on port 8443.
+
+If you get error 404 don't worry, just wait a few more minutes for the dashboard to initialize.
 
 IMPORTANT! After Install:
 Because the network application runs inside Docker, by default it uses an IP address not accessible by other devices.
