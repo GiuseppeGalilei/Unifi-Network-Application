@@ -13,6 +13,8 @@ wget -O install.sh https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Netwo
 ```
 Just copy and paste this command in your terminal, an intuitive script will guide you through the process
 
+<h3 align=center> Watch the demo on Youtube: https://www.youtube.com/watch?v=AEg99KGtOFY </h3>
+
 ## The classic way, Raw compose files with instructions
 You can find:
 - 🐳 Docker compose for deploying Unifi Network Application (including mongodb) on a **Generic System**, along with instructions
