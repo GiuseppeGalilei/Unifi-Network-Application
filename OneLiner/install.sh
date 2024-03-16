@@ -114,7 +114,7 @@ echo '
 Done!
 The dashboard will be available soon on port 8443.
 
-If you get error 404 don't worry, just wait a few more minutes for the dashboard to initialize.
+If you get error 404 do not worry, just wait a few more minutes for the dashboard to initialize.
 
 IMPORTANT! After Install:
 Because the network application runs inside Docker, by default it uses an IP address not accessible by other devices.
