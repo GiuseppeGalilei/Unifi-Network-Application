@@ -109,6 +109,7 @@ echo ""
 rm -rf "$tmp_dir"
 
 #ending message
+
 echo '
 Done!
 The dashboard will be available soon on port 8443.
