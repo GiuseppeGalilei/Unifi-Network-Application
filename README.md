@@ -1,9 +1,13 @@
 <h1 align=center>Easily deploy Unifi Network Application, on Docker 🐳</h1>
 
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FGiuseppeGalilei%2FUnifi-Network-Application&label=Visitors&countColor=%23263759)
+<a title="Give a star if you found it useful">
+  <img src="https://img.shields.io/badge/If useful-leave a star-yellow?style=for-the-badge" style="display: inline-block" />
+</a>
 <a href="https://buymeacoffee.com/giuseppegalilei" title="Buy me a coffee">
   <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-€%203-blue?logo=buy-me-a-coffee&style=for-the-badge" alt="Buy me a coffee" style="display: inline-block" />
 </a>
+
 
 ## The easy way, OneLiner install! (BETA, feedback is appreciated)
 ```bash
