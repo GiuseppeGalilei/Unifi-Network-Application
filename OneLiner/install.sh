@@ -66,7 +66,7 @@ mkdir -p "$tmp_dir"
 cd "$tmp_dir"
 
 #download the compose file
-wget -q -O docker-compose.yml https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Network-Application/main/OneLiner/docker-compose.yml >/dev/null 2>&1
+wget -q -O docker-compose.yml https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Network-Application/oneliner_dev/OneLiner/docker-compose.yml >/dev/null 2>&1
 
 #generate env file and place it in the unifi-install-tmp folder
 echo "INSTALL_FOLDER=$path" > .env
