@@ -3,6 +3,9 @@ services:
   unifi-db:
     container_name: unifi-db
     image: docker.io/mongo:3.6
+    configs:
+      - source: init-mongo.js
+        target: /docker-entrypoint-initdb.d/init-mongo.js
     environment:
       - PGID=1000
       - PUID=1000
@@ -13,7 +16,6 @@ services:
         protocol: tcp
     restart: unless-stopped
     volumes:
-      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
       - type: bind
         source: ${INSTALL_FOLDER}/unifi/unifi-db
         target: /data/db
@@ -75,3 +77,9 @@ services:
 networks:
   unifi-bridge:
     driver: bridge
+
+configs:
+  init-mongo.js:
+    content: |
+      db.getSiblingDB("unifi-db").createUser({user: "unifi", pwd: ${DB_PASSWORD}, roles: [{role: "dbOwner", db: "unifi-db"}]}); 
+      db.getSiblingDB("unifi-db_stat").createUser({user: "unifi", pwd: ${DB_PASSWORD}, roles: [{role: "dbOwner", db: "unifi-db_stat"}]});
