@@ -13,7 +13,7 @@ services:
         protocol: tcp
     restart: unless-stopped
     volumes:
-      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
+      - ${INSTALL_FOLDER}/unifi/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
       - type: bind
         source: ${INSTALL_FOLDER}/unifi/unifi-db
         target: /data/db
