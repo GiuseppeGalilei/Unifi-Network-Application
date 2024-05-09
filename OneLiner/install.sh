@@ -73,7 +73,7 @@ echo "INSTALL_FOLDER=$path" > .env
 echo "DB_PASSWORD=$password" >> .env
 
 #generate init-mongo.js file 
-cat <<EOL > init-mongo.js
+cat <<EOL > $path/unifi/init-mongo.js
 db.getSiblingDB("unifi-db").createUser({user: "unifi", pwd: "$password", roles: [{role: "dbOwner", db: "unifi-db"}]});
 db.getSiblingDB("unifi-db_stat").createUser({user: "unifi", pwd: "$password", roles: [{role: "dbOwner", db: "unifi-db_stat"}]});
 EOL
