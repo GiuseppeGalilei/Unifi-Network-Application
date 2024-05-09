@@ -66,14 +66,14 @@ mkdir -p "$tmp_dir"
 cd "$tmp_dir"
 
 #download the compose file
-wget -q -O docker-compose.yml https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Network-Application/main/OneLiner/docker-compose.yml >/dev/null 2>&1
+wget -q -O docker-compose.yml https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Network-Application/oneliner_dev1/OneLiner/docker-compose.yml >/dev/null 2>&1
 
 #generate env file and place it in the unifi-install-tmp folder
 echo "INSTALL_FOLDER=$path" > .env
 echo "DB_PASSWORD=$password" >> .env
 
 #generate init-mongo.js file 
-cat <<EOL > init-mongo.js
+cat <<EOL > $path/unifi/init-mongo.js
 db.getSiblingDB("unifi-db").createUser({user: "unifi", pwd: "$password", roles: [{role: "dbOwner", db: "unifi-db"}]});
 db.getSiblingDB("unifi-db_stat").createUser({user: "unifi", pwd: "$password", roles: [{role: "dbOwner", db: "unifi-db_stat"}]});
 EOL
