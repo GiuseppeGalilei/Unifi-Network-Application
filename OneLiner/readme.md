@@ -2,7 +2,7 @@
 To use it, just copy and paste the following command in your terminal
 ```bash
 
-wget -O install.sh https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Network-Application/main/OneLiner/install.sh && chmod +x install.sh && ./install.sh
+wget -O install.sh https://raw.githubusercontent.com/GiuseppeGalilei/Unifi-Network-Application/oneliner_dev/OneLiner/install.sh && chmod +x install.sh && ./install.sh
 
 ```
 ### After install
